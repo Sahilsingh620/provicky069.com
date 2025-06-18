@@ -2,51 +2,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vicky | Pro Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pro Vicky | Digital Genius</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Vicky</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Pro Vicky</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://www.instagram.com/vicky___014?igsh=dXd1dzl3dWlodG12" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="toggle-btn" onclick="toggleMode()">🌙</div>
+    </nav>
+  </header>
 
-    <section class="hero" data-aos="fade-up">
-        <h1>Hi, I'm Vicky 😊</h1>
-        <p>Mobile Expert से Web Developer तक का सफर</p>
-        <a href="resume.pdf" download class="btn">Download Resume</a>
+  <main>
+    <section class="hero">
+      <h1>Hi, I'm <span>Pro Vicky</span> 😎</h1>
+      <p>Pro In Digital दुनिया, Chota Genius</p>
     </section>
 
-    <section id="projects" data-aos="fade-up">
-        <h2>Projects</h2>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-container">
         <div class="project-card">
-            <h3>My First Website</h3>
-            <p>HTML और CSS से बनाई गई मेरी पहली वेबसाइट।</p>
+          <h3>My First Website</h3>
+          <p>HTML & CSS से बनी basic portfolio site.</p>
         </div>
         <div class="project-card">
-            <h3>Calculator App</h3>
-            <p>Basic JavaScript से बना एक सिंपल कैलकुलेटर।</p>
+          <h3>Calculator App</h3>
+          <p>JavaScript से बना सिंपल कैलकुलेटर app.</p>
         </div>
+      </div>
     </section>
 
-    <section id="contact" data-aos="fade-up">
-        <h2>Contact Me</h2>
-        <p>Email: vicky@example.com</p>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Instagram पर DM करें 👉 <a href="https://www.instagram.com/vicky___014" target="_blank">@vicky___014</a></p>
     </section>
+  </main>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
