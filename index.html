@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sahil Singh Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pro Vicky Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Hero Section Start -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="#">Pro Vicky</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
   <section class="hero">
-    <div class="hero-content">
-      <div class="profile-photo">
-        <img src="images/sahil.jpg" alt="Sahil Singh" />
-      </div>
-      <div class="hero-text">
-        <h1>Hi, I'm <span>Sahil Singh</span></h1>
-        <p>A passionate web developer & tech enthusiast.</p>
-      </div>
+    <img src="images/sahil.jpg" alt="Sahil Photo" class="profile-img"/>
+    <h1>Hi, I'm <span>Pro Vicky 😎</span></h1>
+    <p>Pro In Digital दुनिया, छोटा Genius</p>
+    <a class="btn" href="#">📄 Resume डाउनलोड करें</a>
+  </section>
+
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>My First Website</h3>
+      <p>HTML & CSS से बनी basic portfolio site.</p>
     </div>
+    <div class="project-card">
+      <h3>Calculator App</h3>
+      <p>JavaScript से बना simple calculator app.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: <a href="mailto:pro.vicky069@gmail.com">pro.vicky069@gmail.com</a></p>
+    <p>📸 Instagram: <a href="https://instagram.com/vicky____014">@vicky____014</a></p>
+    <form>
+      <input type="text" placeholder="आपका नाम"/>
+      <input type="email" placeholder="आपका ईमेल"/>
+      <textarea placeholder="आपका संदेश"></textarea>
+      <button class="send-btn">संदेश भेजें</button>
+    </form>
   </section>
 </body>
 </html>
