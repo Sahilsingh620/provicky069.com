@@ -1,176 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pro Vicky | Portfolio</title>
-  <meta name="description" content="Pro Vicky - Digital दुनिया का छोटा Genius | HTML CSS JS Projects" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
-  <style>
-    :root {
-      --primary: #0d47a1;
-      --accent: #26c6da;
-      --bg-light: #f4f4f9;
-      --bg-dark: #121212;
-      --text-light: #333;
-      --text-dark: #f4f4f9;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      transition: 0.3s ease;
-    }
-    body.dark-mode {
-      background-color: var(--bg-dark);
-      color: var(--text-dark);
-    }
-    header {
-      background: var(--primary);
-      padding: 20px;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .toggle-dark {
-      background: none;
-      border: 2px solid white;
-      padding: 5px 10px;
-      border-radius: 8px;
-      color: white;
-      cursor: pointer;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .hero {
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 36px;
-      color: var(--primary);
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: var(--accent);
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-    .projects .card {
-      background: white;
-      margin: 20px 0;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    body.dark-mode .projects .card {
-      background: #1e1e1e;
-    }
-    .social-icons a {
-      margin: 0 10px;
-      color: var(--accent);
-      font-size: 24px;
-    }
-    form {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    input, textarea {
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-    button {
-      background-color: var(--accent);
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Singh Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div><strong>Pro Vicky</strong></div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="toggle-dark" onclick="toggleDarkMode()">🌙</button>
-  </header>
-
-  <section class="hero" id="about" data-aos="zoom-in">
-    <h1>Hi, I'm <span style="color: var(--accent)">Pro Vicky</span> 😎</h1>
-    <p>Pro In Digital दुनिया, छोटा Genius</p>
-    <a href="resume.pdf" class="btn">📄 Resume डाउनलोड करें</a>
-  </section>
-
-  <section class="projects" id="projects" data-aos="fade-up">
-    <h2>My Projects</h2>
-    <div class="card">
-      <h3>My First Website</h3>
-      <p>HTML & CSS से बनी basic portfolio site.</p>
-    </div>
-    <div class="card">
-      <h3>Calculator App</h3>
-      <p>JavaScript से बना simple calculator app.</p>
+  <!-- Hero Section Start -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="profile-photo">
+        <img src="images/sahil.jpg" alt="Sahil Singh" />
+      </div>
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Sahil Singh</span></h1>
+        <p>A passionate web developer & tech enthusiast.</p>
+      </div>
     </div>
   </section>
-
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <p>📧 Email: <a href="mailto:pro.vicky069@gmail.com">pro.vicky069@gmail.com</a></p>
-    <p>📸 Instagram: <a href="https://www.instagram.com/vicky___014" target="_blank">@vicky___014</a></p>
-
-    <div class="social-icons">
-      <a href="mailto:pro.vicky069@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/vicky___014" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-
-    <form onsubmit="event.preventDefault(); alert('Message sent!');">
-      <input type="text" placeholder="आपका नाम" required>
-      <input type="email" placeholder="आपका ईमेल" required>
-      <textarea rows="4" placeholder="आपका संदेश" required></textarea>
-      <button type="submit">संदेश भेजें</button>
-    </form>
-  </section>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-      localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
-    }
-    if (localStorage.getItem("dark-mode") === "true") {
-      document.body.classList.add("dark-mode");
-    }
-  </script>
 </body>
 </html>
